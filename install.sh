@@ -3,6 +3,15 @@
 
 sudo apt install curl
 
+# install zsh and p9k
+sudo apt install zsh
+
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=0 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cp zshrc.example ~/.zshrc
+cp p9k.zsh.example .p10k.zsh
+
 # install nvm (for markdown preview)
 
 export NVM_DIR="$HOME/.nvm" && (
@@ -14,6 +23,7 @@ export NVM_DIR="$HOME/.nvm" && (
        git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
 
 ) && \. "$NVM_DIR/nvm.sh"
+source ~./
 nvm install --lts
 
 # install markdown preview tool
@@ -32,13 +42,4 @@ sudo apt install vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp vimrc.example ~/.vimrc
-
-# install zsh and p10k
-sudo apt install zsh
-# install oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cp zshrc.example ~/.zshrc
-cp p10k.zsh.example .p10k.zsh
-
 
