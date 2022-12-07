@@ -48,7 +48,7 @@ source ~/.zshrc
 
 nvm install --lts
 
-node -g install instant-markdown-d
+npm -g install instant-markdown-d
 
 ```
 
