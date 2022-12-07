@@ -12,7 +12,8 @@ https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel1
 ___
 
 ## install
-
+```shell
 sh install.sh
+```
 
 

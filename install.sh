@@ -5,8 +5,6 @@ sudo apt install curl
 
 # install nvm (for markdown preview)
 
-
- #install Vim-instant-markdown
 export NVM_DIR="$HOME/.nvm" && (
 
    git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
@@ -16,9 +14,9 @@ export NVM_DIR="$HOME/.nvm" && (
        git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
 
 ) && \. "$NVM_DIR/nvm.sh"
+nvm install --lts
 
-
-
+# install markdown preview tool
 sudo apt install xdg-utils
 nvm -g install instant-markdown-d
 
