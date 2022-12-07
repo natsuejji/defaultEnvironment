@@ -31,8 +31,6 @@ sudo apt install xdg-utils
 nvm -g install instant-markdown-d
 
 # install tmux
-xdg-uadds
-
 sudo apt install tmux
 cp tmux.conf.example ~/.tmux.conf
 
