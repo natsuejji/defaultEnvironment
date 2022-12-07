@@ -6,16 +6,15 @@ ubuntu/linux develop environment setting
 
 ##  prerequisite
 
-* font
+### font
 
 ```
-
 https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
 
 ```
 
-* nvm and nodejs
-# install nvm (for markdown preview)
+### nvm and nodejs
+###### install nvm (for markdown preview)
 ```shell
 
 export NVM_DIR="$HOME/.nvm" && (
