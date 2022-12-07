@@ -7,6 +7,8 @@ cp tmux.conf.example ~/.tmux.conf
 # install vim
 
 sudo apt install vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp vimrc.example ~/.vimrc
 
 # install zsh and p10k
