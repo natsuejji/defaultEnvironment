@@ -1,5 +1,19 @@
 !/bin/bash
+# install curl
+
+sudo apt install curl
+
+# install nvm (for markdown preview)
+
+curl -o-  https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
+# install Vim-instant-markdown
+
+sudo apt install xdg-utils
+nvm -g install instant-markdown-d
+
 # install tmux
+xdg-uadds
 
 sudo apt install tmux
 cp tmux.conf.example ~/.tmux.conf
